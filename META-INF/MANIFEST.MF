@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Perl6 Eclipse Plugin
+Bundle-SymbolicName: perl6-eclipse-plugin
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.perl6.eclipse.Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-BundleShape: dir
+Bundle-ClassPath: install/languages/nqp/runtime/asm-4.1.jar,
+ install/languages/nqp/runtime/asm-tree-4.1.jar,
+ install/languages/nqp/runtime/jline-1.0.jar,
+ install/languages/nqp/runtime/jna.jar,
+ install/languages/nqp/runtime/nqp-runtime.jar,
+ install/languages/perl6/runtime/perl6.jar,
+ install/languages/perl6/runtime/rakudo-runtime.jar,
+ lib/commons-io-2.4.jar,
+ bin/
+Export-Package: org.perl6.script
