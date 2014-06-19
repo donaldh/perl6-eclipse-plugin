@@ -4,7 +4,6 @@ import java.net.URL;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import org.perl6.script.Perl6ScriptEngine;
 
 public class Activator implements BundleActivator {
 
@@ -33,9 +32,6 @@ public class Activator implements BundleActivator {
         String bundlePath = new URL(bundleUrl.getPath()).getPath();
         prefix = bundlePath + "install";
         System.setProperty("perl6.prefix", prefix);
-
-        String code = "for 1..10 {\n" + "  say 'Hello Eclipse World!'\n" + "}";
-        new Perl6ScriptEngine().eval(code);
     }
 
     /*
@@ -47,5 +43,4 @@ public class Activator implements BundleActivator {
     public void stop(BundleContext bundleContext) throws Exception {
         Activator.context = null;
     }
-
 }
