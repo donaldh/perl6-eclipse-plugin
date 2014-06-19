@@ -1,7 +1,7 @@
 perl6-eclipse-plugin
 ====================
 
-Create an eclipse plugin from an installed Perl 6 / JVM.
+Create an eclipse plugin from an installed Perl 6 that has been built with the JVM backend.
 
 At the moment, this plugin depends on the **classloading** branch in nqp.
 
